@@ -22,3 +22,13 @@ drawTriangle([35, 50], [65, 50], [50, 35])
 
 drawLine([50, 550], [950, 550])
 drawTriangle([950, 535], [950, 565], [965, 550])
+
+
+fetch('/stocks')
+.then(res => res.json())
+.then(data => { 
+  console.log(data);
+}
+)
+
+
